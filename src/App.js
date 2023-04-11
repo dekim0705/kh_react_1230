@@ -3,21 +3,17 @@ import './App.css';
 import Section from './11_Composition';
 import {MyComponent} from './11_Children_DefProp';
 import MyComponent1 from './11_Children_DefProp';
+import Person from './11_Person';
 
+// destructuring assignment + object literal + spread operator
 const App = () => {
-  let insideTag = "Zola";
+  const personData = {
+    name : "Meredith",
+    age : "30",
+    gender : "F"
+  };
   return (
-    <>
-      <h1>MyComponent</h1>
-      <MyComponent />
-      <MyComponent name="Meredith" />
-      <MyComponent name="Meredith">{insideTag}</MyComponent>
-      <hr></hr>
-      <h1>MyComponent1</h1>
-      <MyComponent1 />
-      <MyComponent1 name="Meredith" />
-      <MyComponent1 name="Meredith">{insideTag}</MyComponent1>
-    </>
+    <Person {...personData}/>
   );
 }
 
@@ -127,6 +123,25 @@ const App = () => { // Arrow Function
       <hr></hr>
       <Section title="Section 1" content="This is the content for Section 1." />
       <Section title="Section 2" content="This is the content for Section 2." />
+    </>
+  );
+}
+*/
+
+/*
+const App = () => {
+  let insideTag = "Zola";
+  return (
+    <>
+      <h1>MyComponent</h1>
+      <MyComponent />
+      <MyComponent name="Meredith" />
+      <MyComponent name="Meredith">{insideTag}</MyComponent>
+      <hr></hr>
+      <h1>MyComponent1</h1>
+      <MyComponent1 />
+      <MyComponent1 name="Meredith" />
+      <MyComponent1 name="Meredith">{insideTag}</MyComponent1>
     </>
   );
 }
