@@ -1,27 +1,31 @@
 // import logo from './logo.svg';
 import './App.css';
+import Section from './11_Composition';
 
-function App() {
-  const name = "React";
-
-  const nameForSytle = "React";
-  // 리액트에서 DOM요소에 스타일을 적용할 때는 객체 형태로 넣어야 함 (코딩영역)
-  // 스타일 이름에 하이픈(-)이 포함되어 있으면 카멜표기법으로 변경
-  const style = { // object literal > property(key : value)
-    backgroundColor : "black",
-    color : "salmon",
-    fontSize : "2em"
-  };
-
-  // return문 안에는 조건부연산자(if문 대신)와  AND연산자 사용 가능
+// 4/11/Tue (functional component)
+function WelcomeProps(prop) { // component name in CAPITAL letters
+    return (
+      <>
+        <h1>User #{prop.number}</h1>
+        <p>Hi, {prop.name}!</p>
+        <p>This is what reusing a component looks like. </p>
+        <p style={{textAlign: 'center'}}>🩷</p>
+      </>
+    );
+}
+const App = () => { // Arrow Function
+  const element1 = <WelcomeProps name="Meredith" number ="1" />
+  const element2 = <WelcomeProps name="Christina" number ="2" />
   return (
-    // DOM에 붙이기 위해서는 요소가 1개여야함 = 요소들 하나로 묶기 = 부모태그로 감싸기 : <div>, <>
-    <> 
-      {/* 삼항연산자를 사용해서 참인 조건과 거짓인 조건에 대해 렌더링 */}
-			{name === "React" ? (<h1>React : true</h1>) : (<h1>React : false</h1>)}
-      {/* AND연산자를 이용한 조건부 렌더링 */}
-      {name === "React" && <h1>Updating the react screen...</h1>}
-      {nameForSytle ==="React" && <h1 style={style}>Updating the react screen...</h1>}
+    <>
+      {element1}
+      {element2}
+      <WelcomeProps name="Izzie" number="3" />
+      <WelcomeProps name="Alex" number="4" />
+      <WelcomeProps name="George" number="5" />
+      <hr></hr>
+      <Section title="Section 1" content="This is the content for Section 1." />
+      <Section title="Section 2" content="This is the content for Section 2." />
     </>
   );
 }
@@ -82,3 +86,28 @@ function App() {
   );
 }
 */
+
+// function App() {
+//   const name = "React";
+
+//   const nameForSytle = "React";
+//   // 리액트에서 DOM요소에 스타일을 적용할 때는 객체 형태로 넣어야 함 (코딩영역)
+//   // 스타일 이름에 하이픈(-)이 포함되어 있으면 카멜표기법으로 변경
+//   const style = { // object literal > property(key : value)
+//     backgroundColor : "black",
+//     color : "salmon",
+//     fontSize : "2em"
+//   };
+
+//   // return문 안에는 조건부연산자(if문 대신)와  AND연산자 사용 가능
+//   return (
+//     // DOM에 붙이기 위해서는 요소가 1개여야함 = 요소들 하나로 묶기 = 부모태그로 감싸기 : <div>, <>
+//     <> 
+//       {/* 삼항연산자를 사용해서 참인 조건과 거짓인 조건에 대해 렌더링 */}
+// 			{name === "React" ? (<h1>React : true</h1>) : (<h1>React : false</h1>)}
+//       {/* AND연산자를 이용한 조건부 렌더링 */}
+//       {name === "React" && <h1>Updating the react screen...</h1>}
+//       {nameForSytle ==="React" && <h1 style={style}>Updating the react screen...</h1>}
+//     </>
+//   );
+// }
