@@ -1,35 +1,25 @@
 // import logo from './logo.svg';
 import './App.css';
 import Section from './11_Composition';
+import {MyComponent} from './11_Children_DefProp';
+import MyComponent1 from './11_Children_DefProp';
 
-// 4/11/Tue (functional component)
-function WelcomeProps(prop) { // component name in CAPITAL letters
-    return (
-      <>
-        <h1>User #{prop.number}</h1>
-        <p>Hi, {prop.name}!</p>
-        <p>This is what reusing a component looks like. </p>
-        <p style={{textAlign: 'center'}}>🩷</p>
-      </>
-    );
-}
-const App = () => { // Arrow Function
-  const element1 = <WelcomeProps name="Meredith" number ="1" />
-  const element2 = <WelcomeProps name="Christina" number ="2" />
+const App = () => {
+  let insideTag = "Zola";
   return (
     <>
-      {element1}
-      {element2}
-      <WelcomeProps name="Izzie" number="3" />
-      <WelcomeProps name="Alex" number="4" />
-      <WelcomeProps name="George" number="5" />
+      <h1>MyComponent</h1>
+      <MyComponent />
+      <MyComponent name="Meredith" />
+      <MyComponent name="Meredith">{insideTag}</MyComponent>
       <hr></hr>
-      <Section title="Section 1" content="This is the content for Section 1." />
-      <Section title="Section 2" content="This is the content for Section 2." />
+      <h1>MyComponent1</h1>
+      <MyComponent1 />
+      <MyComponent1 name="Meredith" />
+      <MyComponent1 name="Meredith">{insideTag}</MyComponent1>
     </>
   );
 }
-
 
 export default App;
 /*
@@ -111,3 +101,34 @@ function App() {
 //     </>
 //   );
 // }
+
+/*
+// 4/11/Tue (functional component)
+function WelcomeProps(prop) { // component name in CAPITAL letters
+    return (
+      <>
+        <h1>User #{prop.number}</h1>
+        <p>Hi, {prop.name}!</p>
+        <p>This is what reusing a component looks like. </p>
+        <p style={{textAlign: 'center'}}>🩷</p>
+      </>
+    );
+}
+const App = () => { // Arrow Function
+  const element1 = <WelcomeProps name="Meredith" number ="1" />
+  const element2 = <WelcomeProps name="Christina" number ="2" />
+  return (
+    <>
+      {element1}
+      {element2}
+      <WelcomeProps name="Izzie" number="3" />
+      <WelcomeProps name="Alex" number="4" />
+      <WelcomeProps name="George" number="5" />
+      <hr></hr>
+      <Section title="Section 1" content="This is the content for Section 1." />
+      <Section title="Section 2" content="This is the content for Section 2." />
+    </>
+  );
+}
+*/
+
