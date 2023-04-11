@@ -4,18 +4,18 @@ import Section from './11_Composition';
 import {MyComponent} from './11_Children_DefProp';
 import MyComponent1 from './11_Children_DefProp';
 import Person from './11_Person';
+import Say from './11_UseState';
+import Clock from './11_Clock';
 
-// destructuring assignment + object literal + spread operator
 const App = () => {
-  const personData = {
-    name : "Meredith",
-    age : "30",
-    gender : "F"
-  };
-  return (
-    <Person {...personData}/>
+  return(
+    <>
+      <Say />
+      <Clock />
+    </>
   );
 }
+
 
 export default App;
 /*
@@ -146,4 +146,19 @@ const App = () => {
   );
 }
 */
+
+/*
+// destructuring assignment + object literal + spread operator
+const App = () => {
+  const personData = {
+    name : "Meredith",
+    age : "30",
+    gender : "F"
+  };
+  return (
+    <Person {...personData}/>
+  );
+}
+*/
+
 
