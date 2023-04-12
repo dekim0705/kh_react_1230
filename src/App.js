@@ -7,12 +7,19 @@ import './App.css';
 // import Say from './11_UseState';
 // import Clock from './11_Clock';
 // import EventHandler from './12_EventHandler';
-import EventHandler2 from './12_EventHandler';
+// import EventHandler2 from './12_EventHandler';
+import FruitSelect from './12_SelectBox';
+import RadioButton from './12_RadioButton';
+
 
 const App = () => {
   return(
     <>
-      <EventHandler2 />
+      <h3>Select Box</h3>
+      <FruitSelect />
+      <br /><br /><hr />
+      <h3>Radio Button</h3>
+      <RadioButton />
     </>
   );
 }
@@ -173,6 +180,8 @@ const App = () => {
 }
 */
 
+// 4 / 12 / Wed
+
 /*
 // 4/12/Wed
 const App = () => {
@@ -183,3 +192,14 @@ const App = () => {
   );
 }
 */
+
+/*
+const App = () => {
+  return(
+    <>
+      <EventHandler2 />
+    </>
+  );
+}
+*/
+
