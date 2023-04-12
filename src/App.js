@@ -6,12 +6,13 @@ import './App.css';
 // import Person from './11_Person';
 // import Say from './11_UseState';
 // import Clock from './11_Clock';
-import EventHandler from './12_EventHandler';
+// import EventHandler from './12_EventHandler';
+import EventHandler2 from './12_EventHandler';
 
 const App = () => {
   return(
     <>
-      <EventHandler />
+      <EventHandler2 />
     </>
   );
 }
@@ -172,4 +173,13 @@ const App = () => {
 }
 */
 
-
+/*
+// 4/12/Wed
+const App = () => {
+  return(
+    <>
+      <EventHandler />
+    </>
+  );
+}
+*/
