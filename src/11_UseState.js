@@ -7,13 +7,13 @@ const Say = () => {
     const [message, setMessage] = useState('');
     const onClickenter = () => setMessage("Hi!");
     const onClickLeave = () => setMessage("Bye!");
-    const [color, setColor] = useState('black');
+    const [val, setColor] = useState('black');
 
     return(
         <>
         <button onClick ={onClickenter}>Enter</button>
         <button onClick ={onClickLeave}>Leave</button>
-        <h1 style={{color}}>{message}</h1>
+        <h1 style={{color: val}}>{message}</h1>
         <button style={{color:'red'}} onClick ={()=>setColor('red')}>Red</button>
         <button style={{color:'green'}} onClick ={()=>setColor('green')}>Green</button>
         <button style={{color:'blue'}} onClick ={()=>setColor('blue')}>Blue</button>
