@@ -1,17 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
-import Section from './11_Composition';
-import {MyComponent} from './11_Children_DefProp';
-import MyComponent1 from './11_Children_DefProp';
-import Person from './11_Person';
-import Say from './11_UseState';
-import Clock from './11_Clock';
+// import Section from './11_Composition';
+// import {MyComponent} from './11_Children_DefProp';
+// import MyComponent1 from './11_Children_DefProp';
+// import Person from './11_Person';
+// import Say from './11_UseState';
+// import Clock from './11_Clock';
+import EventHandler from './12_EventHandler';
 
 const App = () => {
   return(
     <>
-      <Say />
-      <Clock />
+      <EventHandler />
     </>
   );
 }
@@ -157,6 +157,17 @@ const App = () => {
   };
   return (
     <Person {...personData}/>
+  );
+}
+*/
+
+/*
+const App = () => {
+  return(
+    <>
+      <Say />
+      <Clock />
+    </>
   );
 }
 */
