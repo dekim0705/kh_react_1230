@@ -8,21 +8,18 @@ import './App.css';
 // import Clock from './11_Clock';
 // import EventHandler from './12_EventHandler';
 // import EventHandler2 from './12_EventHandler';
-import FruitSelect from './12_SelectBox';
-import RadioButton from './12_RadioButton';
-
+// import FruitSelect from './12_SelectBox';
+// import RadioButton from './12_RadioButton';
+import TableMap from './12_TableMap';
 
 const App = () => {
   return(
     <>
-      <h3>Select Box</h3>
-      <FruitSelect />
-      <br /><br /><hr />
-      <h3>Radio Button</h3>
-      <RadioButton />
+      <TableMap />
     </>
   );
 }
+
 
 
 export default App;
@@ -198,6 +195,20 @@ const App = () => {
   return(
     <>
       <EventHandler2 />
+    </>
+  );
+}
+*/
+
+/*
+const App = () => {
+  return(
+    <>
+      <h3>Select Box</h3>
+      <FruitSelect />
+      <br /><br /><hr />
+      <h3>Radio Button</h3>
+      <RadioButton />
     </>
   );
 }
