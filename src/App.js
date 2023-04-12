@@ -10,12 +10,13 @@ import './App.css';
 // import EventHandler2 from './12_EventHandler';
 // import FruitSelect from './12_SelectBox';
 // import RadioButton from './12_RadioButton';
-import TableMap from './12_TableMap';
+// import TableMap from './12_TableMap';
+import CreateRef from './12_Ref';
 
 const App = () => {
   return(
     <>
-      <TableMap />
+      <CreateRef />
     </>
   );
 }
@@ -213,4 +214,16 @@ const App = () => {
   );
 }
 */
+
+/*
+const App = () => {
+  return(
+    <>
+      <TableMap />
+    </>
+  );
+}
+*/
+
+
 
