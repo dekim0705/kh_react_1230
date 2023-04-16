@@ -16,6 +16,16 @@ table {
 th, td {
   border: 1px solid #ccc;
 }
+.title-name {
+  color: white;
+  font-size: 2em;
+  background-color: rosybrown;
+}
+.todo-item {
+  width: 300px;
+  height: 50px;
+  border: 1px solid rosybrown;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

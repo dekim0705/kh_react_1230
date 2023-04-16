@@ -11,12 +11,24 @@ import './App.css';
 // import FruitSelect from './12_SelectBox';
 // import RadioButton from './12_RadioButton';
 // import TableMap from './12_TableMap';
-import CreateRef from './12_Ref';
+// import CreateRef from './12_Ref';
+// import MapTest from './13_MapTest';
+// import MapTest from './13_MapTest2';
+// import MapTest from './13_MapTest3';
+// import IterationSample from './13_Iteration';
+// import UseState from './13_UseState';
+// import UserState from './14_UseState_Ex';
+import Board from './study/0414_Tic_Tac_Toe';
+import State from './study/0414_State'
+
 
 const App = () => {
+
   return(
     <>
-      <CreateRef />
+      {/* <UserState/> */}
+      <Board />
+      <State />
     </>
   );
 }
@@ -225,5 +237,33 @@ const App = () => {
 }
 */
 
+/*
+const App = () => {
+  return(
+    <>
+      <CreateRef />
+    </>
+  );
+}
+*/
 
+
+// 4 / 13 / Thu
+/*
+const App = () => {
+
+  return(
+    <>
+      <MapTest />
+      <br /><hr /><br />
+      <IterationSample />
+      <br /><hr /><br />
+      <UseState />
+      <br /><hr /><br />
+      <ToDoList />
+      <br /><hr /><br />
+    </>
+  );
+}
+*/
 
