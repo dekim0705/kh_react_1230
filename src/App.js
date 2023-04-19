@@ -18,17 +18,40 @@ import './App.css';
 // import IterationSample from './13_Iteration';
 // import UseState from './13_UseState';
 // import UserState from './14_UseState_Ex';
-import Board from './study/0414_Tic_Tac_Toe';
-import State from './study/0414_State'
+import UseEffectInfo from './0417_Mon/01_useEffect';
+import UseEffectCnt from './0417_Mon/02_useEffect';
+import UseEffectClock from './0417_Mon/03_useEffect';
+import UseReducerCnt from './0417_Mon/04_useReducer';
+import Average from './0417_Mon/05_useMemo';
+import Info from './0417_Mon/06_useCallback';
+import AverageRef from './0417_Mon/07_useRef';
 
 
 const App = () => {
 
   return(
     <>
-      {/* <UserState/> */}
-      <Board />
-      <State />
+      <p>useEffectInfo</p>
+      <UseEffectInfo />
+      <br /><hr /><br />
+      <p>useEffectCnt</p>
+      <UseEffectCnt />
+      <br /><hr /><br />
+      <p>useEffectClock</p>
+      <UseEffectClock />
+      <br /><hr /><br />
+      <p>useReducerCnt</p>
+      <UseReducerCnt />
+      <br /><hr /><br />
+      <p>useMemo Average</p>
+      <Average />
+      <br /><hr /><br />
+      <p>useCallback Info</p>
+      <Info />
+      <br /><hr /><br />
+      <p>useRef Average</p>
+      <AverageRef />
+      
     </>
   );
 }
